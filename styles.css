@@ -1,0 +1,234 @@
+/* Loader Starts Here */
+/* Loader */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader h1 {
+  font-size: 8vh;
+  color: #3b4ef8;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 6vh;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 5px solid whitesmoke;
+  border-top-color: #3b4ef8;
+  font-family: "Roboto Slab", serif;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*Loader Ends Here  */
+
+/* Utility Classes */
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.garamond {
+  font-family: "EB Garamond", serif;
+}
+
+.krub {
+  font-family: "Krub", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.bottomLine {
+  margin-bottom: 0px !important;
+}
+
+.bottomLineExt::after {
+  content: "";
+  display: block;
+  color:#124265;
+  height: 1rem;
+  width: 5rem;
+ 
+}
+
+.orange {
+  color: #ff7f5d;
+}
+.colorDarkBlue {
+  color: #124265 !important;
+}
+
+.bgDarkBlue {
+  background-color: #124265 !important;
+}
+
+.lightBlue {
+  color: #2487ce!important;
+}
+
+.bgLightBlue {
+  background-color: #2487ce!important;
+}
+
+.bgGain {
+  background-color: #f6f7ff;
+}
+
+.txtGray {
+  color: #444444;
+}
+
+.borderLight {
+  border: 1px solid #dee2e6;
+}
+
+.scale {
+  transform: scale(2.5);
+  margin-top: 1.2rem !important;
+  margin-right: 1.8rem !important;
+}
+.font15px {
+  font-size: 15px;
+}
+
+.font18px {
+  font-size: 18px;
+}
+
+.font24px {
+  font-size: 24px;
+}
+
+.font36px {
+  font-size: 36px;
+}
+.font30px {
+  font-size: 30px;
+}
+
+.font48px {
+  font-size: 48px;
+}
+
+.font56px{
+    font-size: 56px;
+}
+
+.font14px {
+  font-size: 13px;
+}
+
+
+/* Section (Clients) Ends Here */
+
+/* .secServices{
+    background-color: #2D405F;
+    color: white;
+} */
+
+.secHero{
+    background: no-repeat fixed ;
+    background-image: url("img/hero-bg.jpg"),linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) ;
+    background-size: cover;
+    color: white;
+    background-blend-mode: lighten;
+}
+
+
+ .iconDiv i {
+  font-size: 36px !important;
+  color:#2487ce;
+}
+
+
+/* Section (Clients) starts here */
+
+.secClients .col-lg-2 {
+  width: 8rem;
+}
+
+.secClients img {
+
+  padding: 90%;
+  filter: grayscale(100%);
+
+}
+
+.secClients img:hover {
+  filter: grayscale(0%) !important;
+  transition: filter 1s;
+}
+
+/* Section 6 Ends Here */
+
+/* Section (Clients) Ends Here */
+
+.secServices{
+  background-color: #2D405F;
+  color: white;
+}
+
+.secServices .iconDiv {
+height: 4.8rem;
+width: 4.8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+background-color: #eff2f8;
+}
+
+.secServices .iconDiv i {
+font-size: 32px !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 566px) {
+  .border0 {
+    border: none !important;
+  }
+
+
+    .secHero h1{
+        font-size: 2.5rem!important;
+    }
+    .secHero h4{
+        font-size: 18px!important;
+    }
+    footer .inpDiv{
+        width: 100%!important;
+    }
+    footer .inpDiv .inpSubmit{
+        width: 6rem!important;
+    }
+
+
+
+}
